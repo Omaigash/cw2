@@ -1,0 +1,24 @@
+Course work for option 4.19, created by Omelyash Egor
+Usage: program_name [operation] [operation_args] [-i input.png] [-o output.png]
+
+Operations (only one per execution):
+  --triangle                  Draw a triangle.
+      --points <x1.y1.x2.y2.x3.y3> Vertex coordinates (required).
+      --thickness <int>       Line thickness, >0 (required).
+      --color <r.g.b>         Line color, 0-255 (required).
+      --fill                  (Optional) Flag to fill the triangle.
+      --fill_color <r.g.b>    (Optional) Fill color if --fill is used.
+
+  --biggest_rect              Find and recolor the largest rectangle of a specific color.
+      --old_color <r.g.b>     Color of the rectangle to find (required).
+      --new_color <r.g.b>     Color to repaint with (required).
+
+  --collage                   Create a collage from the input image.
+      --number_x <int>        Number of repetitions along X-axis, >0 (required).
+      --number_y <int>        Number of repetitions along Y-axis, >0 (required).
+
+Other options:
+  -i, --input <file.png>      Input PNG file name.
+  -o, --output <file.png>     Output PNG file name (default: out.png).
+      --info                  Show information about the input PNG file.
+  -h, --help                  Show this help message.
