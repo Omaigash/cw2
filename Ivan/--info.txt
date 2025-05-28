@@ -1,0 +1,21 @@
+--- BMP File Information for: pic11.bmp ---
+
+--- File Header ---
+Signature:         0x4d42 (BM)
+Filesize:          600054 bytes
+Reserved1:         0
+Reserved2:         0
+Pixel Array Offset:54
+
+--- Info Header ---
+Header Size:       40
+Width:             500 pixels
+Height:            400 pixels
+Planes:            1
+Bits Per Pixel:    24
+Compression:       0 (BI_RGB - no compression)
+Image Size:        0 bytes (may be 0 for BI_RGB)
+X Pixels Per Meter:0
+Y Pixels Per Meter:0
+Colors in Table:   0
+Important Colors:  0

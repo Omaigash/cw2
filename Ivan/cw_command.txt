@@ -1,0 +1,25 @@
+Course work for option 4.5, created by Koltunov Ivan
+Usage: <program_name> [options] [input_file]
+
+Options:
+  -h, --help                  Display this help message and exit.
+  -I, --info                  Display BMP image information and exit.
+  -i, --input <filename>      Specify the input BMP image file.
+  -o, --output <filename>     Specify the output BMP image file (default: out.bmp).
+
+Operations (select only one):
+  -V, --inverse               Invert colors in a specified region.
+  -G, --gray                  Convert a specified region to grayscale.
+      --left_up <x.y>         Top-left corner of the region (for --inverse, --gray).
+      --right_down <x.y>      Bottom-right corner of the region (for --inverse, --gray).
+
+  -Z, --resize                Resize the image.
+      --left <value>          Change in width from the left side (positive to extend, negative to crop).
+      --right <value>         Change in width from the right side.
+      --above <value>         Change in height from the top side.
+      --below <value>         Change in height from the bottom side.
+      -C, --color <r.g.b>     Background color for extended areas during resize (e.g., 255.0.0 for red).
+
+Example: 
+  ./cw_program --inverse --left_up 10.20 --right_down 100.120 -i input.bmp -o output.bmp
+  ./cw_program --resize --left 50 --above -20 --color 0.0.0 -i input.bmp
